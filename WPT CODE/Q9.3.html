@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9 form</title>
+</head>
+<body >
+    
+    <form action="post" style="margin-left: 50px;">
+
+        <h1>Employee Details</h1>
+
+        <table border="2px">
+
+            <tr>
+                <td>1)</td>
+                <td><label for="">Employee ID:</label></td>
+                <td><input type="number" name="id" id=""></td>
+            </tr>
+            <tr>
+                <td>2)</td>
+                <td><label for="">Employee Name:</label></td>
+                <td><input type="text" name="name" id=""></td>
+            </tr>
+            <tr>
+                <td>3)</td>
+                <td><label for="">Department Name:</label></td>
+                <td>
+                    <select name="department" id="">
+                        <option value="S/W"><label for="">S/W</label></option>
+                        <option value="HR"><label for="">HR</label></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>4)</td>
+                <td><label for="">Gender:</label></td>
+                <td><input type="radio" name="Gender" id="male" checked><label for="male">Male</label>
+                    <input type="radio" name="Gender" id="female"><label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>5)</td>
+                <td><label for="">Address</label></td>
+                <td><textarea name="Address" id="Address" cols="20" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td>6)</td>
+                <td><label for="">Skill Topic:</label></td>
+                <td>
+                    <input type="checkbox" name="skills" id="c"/><label for="c">C</label>
+                    <input type="checkbox" name="skills" id="c++"/><label for="c++">C++</label>
+                    <input type="checkbox" name="skills" id="java"/><label for="java">Java</label><br>
+                    <input type="checkbox" name="skills" id=".net"><label for=".net">.NET</label>
+                </td>
+            </tr>
+            <tr>
+                <td>7)</td>
+                <td><label for="">Email:</label></td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>8)</td>
+                <td><label for="">Birth Date:</label></td>
+                <td><input type="date" name="dob" id="dob"></td>
+            </tr>
+
+        </table>
+
+    </form>
+    
+
+</body>
+</html>

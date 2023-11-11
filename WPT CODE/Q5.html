@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Form</title>
+</head>
+<body>
+    <table border="1" cellspacing="10px" cellpadding="10px" bgcolor="#ffc18f">
+
+        <tr>
+            <td><label>Name </label></td>
+            <td><input type="text" name-="name" autofocus></td>
+        </tr>
+
+        <tr>
+            <td><label>Employee Code </label></td>
+            <td><input type="text" name="empcode" size="5"></td>
+        </tr>
+        <tr>
+            <td><label>Department </label></td>
+            <td><input type="radio" name="department" value="ADMIN" id="admin" checked><label for="admin">ADMIN</label><br>
+                <input type="radio" name="department" value="HR" id="hr"><label for="hr">HR</label><br>
+                <input type="radio" name="department" value="TECHNICAL" id="technical"><label for="technical">TECHNICAL</label><br>
+                <input type="radio" name="department" value="ACCOUNTS" id="accounts"><label for="accounts">ACCOUNTS</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>Date of Joining </label></td>
+            <td><input type="text" name="date" size="1">&nbsp;/
+                <input type="text" name="month" size="1">&nbsp;/
+                <input type="text" name="year" size="1"><br>
+                <label>DD&ensp;&ensp;&ensp;&ensp;MM&ensp;&ensp;&ensp;&ensp;YY</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Address</label></td>
+            <td><textarea type="text" cols="40" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td><label>Training program Attended</label></td>
+            <td><input type="checkbox" value="HTML" name="program" id="html" checked><label for="html">HTML/DHTML</label><br>
+                <input type="checkbox" value="HTML" name="program" id="java"><label for="java">JAVA</label><br>
+                <input type="checkbox" value="HTML" name="program" id="client"><label for="client">CLIENT/SERVER</label><br>
+                <input type="checkbox" value="HTML" name="program" id=".net"><label for=".net">.NET</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>Training programs need to attend</label></td>
+            <td>
+                <select name="programs" id="program" size="2">
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Java">Java</option>
+                    <option value=".Net">.Net</option>
+                    <option value="Python">Python</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Send the information At</label></td>
+            <td><a href="vishalingle7873@gmail.com">vishalingle7873@gmail.com</a></td>
+        </tr>
+
+
+    </table>
+</body>
+</html>
