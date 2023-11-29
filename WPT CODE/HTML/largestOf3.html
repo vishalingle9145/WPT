@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest of Three</title>
+
+<script>
+
+    function largestnum()
+    {
+        var no1 = document.getElementById("fno").value;
+        var no2 = document.getElementById("sno").value;
+        var no3 = document.getElementById("tno").value;
+
+        if(no1>no2 && no1>no3)
+        {
+            document.getElementById("lno").value=no1;
+        }
+        else if(no2>no1 && no2>no3)
+        {
+            document.getElementById("lno").value=no2;
+        }
+        else{
+            document.getElementById("lno").value=no3;
+        }
+
+        var no1 = document.getElementById("fno").value="";
+        var no2 = document.getElementById("sno").value="";
+        var no3 = document.getElementById("tno").value="";
+
+    }
+
+</script>
+
+</head>
+<body>
+
+    <form action="" method="">
+
+        <h1>Find Largest between three numbers</h1>
+        <table>
+            <tr>
+                <td>First Number</td>
+                <td><input type="number" name="fno" id="fno"></td>
+            </tr>
+            <tr>
+                <td>Second Number</td>
+                <td><input type="number" name="sno" id="sno"></td>
+            </tr>
+            <tr>
+                <td>Third Number</td>
+                <td><input type="number" name="tno" id="tno"></td>
+            </tr>
+
+            <tr>
+                <td>Largest Number</td>
+                <td><input type="text" name="lno" id="lno" readonly></td>
+                <td><p id="lno"></p></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button type="button" value="submit" onclick="largestnum()">Find</button></td>
+            </tr>
+        </table>
+
+    </form>
+
+    
+</body>
+</html>

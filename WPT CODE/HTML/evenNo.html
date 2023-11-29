@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even numbers to n</title>
+    <script>
+
+        function evenNumber()
+        {
+            var num = document.getElementById("num").value;
+            var i=0;
+            str = "<table border=1><tr><th>Even Numbers</th></tr>"
+            while(i<=num)
+            {
+                if(i%2==0)
+                //str+=`<p>${i} </p>`
+                //str+="<p>"+i+"</p>" //use anyone of them
+
+                str+=`<tr><td>${i}</td></tr>`
+
+            i++;
+            }
+            str+="</table>"
+            document.getElementById("myid").innerHTML=str;
+        }
+
+    </script>
+</head>
+<body>
+<h2>Enter Number</h2>
+<label for="">Enter Number: </label><input type="number" name="num" id="num">
+<br><br>
+<button type="button" name="btn" id="btn" value="show" onclick="evenNumber()">Show</button><br><br>
+    
+<div id="myid"></div>
+</body>
+</html>

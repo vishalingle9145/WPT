@@ -1,0 +1,45 @@
+
+body{
+
+    background-color: black;
+    color: white;
+}
+
+#fieldname{
+    text-align: right;
+}
+
+legend{
+    background-color: #4b45f7;
+    font-weight: bolder;
+}
+fieldset{
+    border: solid #4b45f7;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+}
+
+input{
+    border-color: green;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: black;
+    color: white;
+}
+
+button{
+    background-color: #4b45f7;
+    font-weight: bolder;
+    color: white;
+    border-radius: 5px;
+    margin-left: 100px;
+}
+
+#loginform{
+    margin-left: 30px;
+}
+
+#login{
+    max-width: 300px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        td{
+            padding: 10px;
+            margin: 10px;
+        }
+        label{
+            font-weight: bolder;
+        }
+
+        input{
+            padding: 5px;
+            border-radius: 5px;
+        }
+        button{
+            background-color: cyan;
+            padding: 5px;
+            border-radius: 5px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <form action="/insertvoter" method="post">
+
+        <h2>Enter Voter Details</h2>
+
+        <table>
+
+            <tr>
+                <td> <label for="">Voter Id: </label></td>
+                <td><input type="number" name="id" id="id" placeholder="Enter Voter Id"></td>
+            </tr>
+            <tr>
+                <td> <label for=""> Voter Name: </label></td>
+                <td><input type="text" name="name" id="name" placeholder="Enter Voter Name"></td>
+            </tr>
+            <tr>
+                <td><label for="">Party: </label></td>
+                <td><input type="text" name="party" id="party" placeholder="Enter Party Name"></td>
+            </tr>
+            <tr>
+                <td><label for="">Total Votes: </label></td>
+                <td> <input type="number" name="votes" id="votes" placeholder="Enter Votes"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit" name="btn" id="btn" value="btn">Add Voter</button></td>
+            </tr>
+
+        </table>
+
+    </form>
+</body>
+
+</html>

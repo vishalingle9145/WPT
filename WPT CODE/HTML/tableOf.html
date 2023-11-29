@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table of Number</title>
+
+    <script>
+
+        function showTable()
+        {
+            var num = parseInt(document.getElementById("num").value);
+
+            var str = "<p> <h2>Table of "+num+"</h2>";
+
+            for(var i=1; i<=10; i++)
+            {
+                str+=`<p>${num} * ${i} = ${num*i} </p>`;
+                
+            }
+
+            str+="</p>"
+
+            document.getElementById("mydiv").innerHTML=str;
+        }
+    </script>
+
+</head>
+<body>
+
+    <label for="">Enter Number:</label>
+    <input type="number" name="num" id="num"><br><br>
+
+    <button type="button" id="btn" name="btn" value="show" onclick="showTable()">ShowTable</button>
+
+    <div id="mydiv"></div>
+    
+</body>
+</html>

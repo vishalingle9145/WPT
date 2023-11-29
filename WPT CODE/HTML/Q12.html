@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegisterLogin Form</title>
+    <link rel="stylesheet" href="/CSS/Q12.css">
+
+    <script>
+
+        function showPassword(){
+            var pass = document.getElementById("pass");
+           if(pass.type === "password")
+           {
+            pass.type="text";
+           }
+           else{
+            pass.type="password";
+           }
+
+        }
+
+       function errormsg()
+       {
+            var ssn = document.getElementById("ssn").value;
+            if(ssn!="")
+            {
+            document.getElementById("myp").innerHTML="";
+            return true;
+            }else{
+                document.getElementById("myp").innerHTML="Fill name and address";
+                return false;
+            }
+       }
+    </script>
+</head>
+<body>
+
+    <form action="Q11.html" method="">
+        <fieldset id="registerform">
+            <legend>Name and Address</legend>
+
+            <table>
+                <tr>
+                    <td id="fieldname"><label for="">SSN:</label></td>
+                    <td><input type="text" id="ssn" name="ssn"></td>
+                    <td ><p id="myp"></p></td>
+                </tr>
+                    <tr>
+                        <td id="fieldname"><label for="">Full Name:</label></td>
+                        <td><input type="text" id="name" name="name" ></td>
+                    </tr>
+
+                    <tr>
+                        <td id="fieldname"><label for="">Street and Number:</label></td>
+                        <td><input type="text" id="street" name="street" ></td>
+                    </tr>
+
+                    <tr>
+                        <td id="fieldname"><label for="">Postal Code:</label></td>
+                        <td><input type="number" id="pcode" name="pcode" ></td>
+                    </tr>
+
+                    <tr>
+                        <td id="fieldname"><label for="">City:</label></td>
+                        <td><input type="text" id="city" name="city" ></td>
+                    </tr>
+                </tr>
+            </table>
+
+        </fieldset>
+
+        <fieldset id="login">
+            <legend>Username and Password</legend>
+            <table  id="loginform">
+                <tr>
+                    <td id="fieldname"><label for="">Username</label></td>
+                    <td><input type="text" name="uname" id="uname"></td>
+                </tr>
+                <tr>
+                    <td id="fieldname"><label for="">Password</label></td>
+                    <td><input type="password" name="pass" id="pass"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="showpass" id="showpass" onclick="showPassword()"><label for="showpass">Show Password</label></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+        <button type="button" value="register" onclick="errormsg()">Register</button>
+    </form>
+    
+</body>
+</html>

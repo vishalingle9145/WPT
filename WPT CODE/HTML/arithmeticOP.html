@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operation</title>
+
+    <script>
+
+        function calculate()
+        {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            var op = document.getElementById("op").value;
+            var result=0;
+            if(op==='+')
+            {
+                result = num1 + num2;
+            }
+            else if(op==='-')
+            {
+                result = num1 - num2;
+            }
+            else if(op==='*')
+            {
+                result = num1 * num2;
+            }
+            else if(op==='/')
+            {
+                result = num1 / num2;
+            }
+            else{
+                result = "Invalid Operator!!!"
+            }
+
+            document.getElementById("result").value=result;
+
+        }
+
+    </script>
+</head>
+<body>
+    
+    <label for="">Enter First Number:</label>
+    <input type="number" name="num1" id="num1"><br><br>
+    <label for="">Enter Second Number:</label>
+    <input type="number" name="num2" id="num2"><br><br>
+    <label for="">Enter Operator(+,-,*,/):</label>
+    <input type="text" name="op" id="op"><br><br>
+    <label for="">Result:</label>
+    <input type="text" name="result" id="result" readonly><br><br>
+    <button type="button" name="calculate" value="calculate" onclick="calculate()">Calculate</button>
+
+</body>
+</html>

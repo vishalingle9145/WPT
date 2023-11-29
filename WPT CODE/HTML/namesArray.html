@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Demo</title>
+
+    <script>
+
+        var nameArr =[]
+        function display() {
+            for (var i = 0; i < nameArr.length; i++) {
+
+                var str = "<p>";
+                for()
+                document.getElementById("myp").innerHTML`${nameArr[i]}`;
+            }
+        }
+        function addNames() {
+
+            var name = document.getElementById("name").value;
+
+            nameArr.push(name);
+            display()
+
+           
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <label for="">Enter Name: </label>
+    <input type="text" name="name" id="name"><br><br>
+
+    <button type="button" id="btn" value="add" onclick="addNames()">Add Name</button><br><br><br>
+
+    <p id="myp"></p>
+
+</body>
+
+</html>

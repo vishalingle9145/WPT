@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+            function compoundInterest()
+            {
+                var principle = parseFloat(document.getElementById("pamt").value);
+                var rate = parseFloat(document.getElementById("roi").value);
+                var period = parseFloat(document.getElementById("period").value);
+
+                var result = ((principle * (1+rate/100)**period)- principle);
+                document.getElementById("result").value=result;
+            }
+
+            
+
+
+    </script>
+</head>
+<body>
+    
+    <h1>Calculate Compound Interest</h1>
+
+     <label for="">Principle Amount: </label>
+     <input type="number" name="pamt" id="pamt" autofocus><br><br>
+     <label for="">Rate of Interest: </label>
+     <input type="number" name="roi" id="roi"><br><br>
+     <label for="">Period in Years: </label>
+     <input type="number" name="period" id="period"><br><br>
+     <label for="">Compound Interest: </label>
+     <input type="text" name="result" id="result" readonly><br><br>
+
+     <button type="button" id="btn" value="calculate" onclick="compoundInterest()">Calculate</button>
+
+</body>
+</html>

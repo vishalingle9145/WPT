@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>power</title>
+
+    <script>
+
+        function calculate() {
+            var num = parseInt(document.getElementById("num1").value);
+            var exp = parseInt(document.getElementById("exp").value);
+
+            var pow=1;
+            for(var i=1; i<=exp; i++)
+            {
+                pow = pow*num;
+            }
+
+            document.getElementById("result").value=pow;
+    }
+
+    </script>
+
+</head>
+
+<body>
+
+    <label for="">Number: </label>
+    <input type="number" name="num1" id="num1"><br><br>
+    <label for="">Exponent: </label>
+    <input type="number" name="exp" id="exp"><br><br>
+
+    <label for="">Result: </label>
+    <input type="text" name="result" id="result" readonly><br><br>
+
+    <button type="button" id="btn" onclick="calculate()">Calculate</button>
+
+
+</body>
+
+</html>
